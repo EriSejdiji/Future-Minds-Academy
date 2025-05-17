@@ -1,0 +1,12 @@
+h1 {
+    background-color: rgb(252, 252, 30);
+    border-radius: 6px !important;
+}
+h2 {
+    background-color: rgb(17, 56, 1);
+}
+p {
+
+    width: 400px;
+    color: purple;
+}
