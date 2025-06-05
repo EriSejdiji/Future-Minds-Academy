@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+    }
+    
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+      height: 600px;
+      border: 3px solid black;
+
+    }
+    .top {
+      display: flex;
+      justify-content: space-around;
+      height: 20%;
+    }
+    .price {
+      width: 48%;
+      border-right: 2px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .date {
+      width: 48%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .date h1,p {
+      margin: 2px;
+    }
+    .image-div {
+      border-top: 3px solid black;
+      background-image:url(https://storage.googleapis.com/pod_public/1300/139722.jpg);
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    
+    }
+    .image-div p {
+      color: white;
+      font-weight: bold;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    }
+    
+    
+    
+
+    
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="top">
+      <div class="price">
+        <h1>40C</h1>
+      </div>
+      <div class="date">
+      <h1>29</h1>
+      <p>JAN</p>
+      <p>02408</p>
+      </div>
+      </div>
+      <div class="image-div">
+        <p>&copy;1998 Dragon Ball group</p>
+      </div>
+  </div>
+  
+</body>
+</html>
