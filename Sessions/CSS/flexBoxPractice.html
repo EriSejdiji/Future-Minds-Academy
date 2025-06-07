@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+        aside {
+            display: flex;
+            background-color: rgb(1, 73, 73);
+            flex-direction: column;
+            margin-right: 20px;
+            width: 200px;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            text-align: right;
+        }
+
+        .div-1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .div-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .div-text p,
+        h1 {
+            margin-bottom: 2px;
+        }
+
+        .div-1 img {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+        
+            
+        }
+
+        .span1 {
+            color: aqua;
+        }
+
+        .button1 {
+            background-color: rgb(43, 255, 43);
+            color: white;
+            padding: 7px;
+        }
+
+        .button2 {
+            background-color: rgb(72, 209, 255);
+            color: white;
+            padding: 7px;
+        }
+
+        .button3 {
+            background-color: red;
+            color: white;
+            padding: 7px;
+        }
+
+        .paragraph {
+            color: rgba(128, 128, 128, 0.336);
+            margin-top: 30px;
+            font-size: 1em;
+        }
+
+        hr {
+            width: 33%;
+            margin-left: 0;
+            opacity: 0.5;
+            margin-top: 2px;
+        }
+
+        .btn {
+            padding: 11px;
+            border: 1px solid rgb(153, 153, 253);
+            color: white;
+        }
+        .btn:hover {
+            opacity: 0.7;
+        }
+         a {
+            text-decoration: none;
+        }
+
+        aside h1 {
+            color: white;
+            font-weight: bold;
+            font-size: 2rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+             Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             padding: 0;
+        }
+        aside p {
+            color: rgb(129, 129, 255);
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+        .aside-div {
+        margin-left: 3px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <aside>
+        <div class="aside-div">
+        <h1>A<br>SAMPLE<br> BLOG</h1>
+        <p>Lorem ipsum<br> dolor</p>
+        <a href="/Projects/portfolio.html"><span class="btn">LOG IN</span></a>
+        </div>
+
+    </aside>
+    <main>
+        <div class="main-content">
+            <p class="paragraph">PINNED POST
+            <p>
+                <hr>
+            <div class="div-1">
+                <div class="div-text">
+                    <h1>A pinned post</h1>
+                    <p>By <span class="span1">John Doe</span> under <span class="button1">css</span> <span
+                            class="button2">html</span></p>
+                </div>
+                <img src="image2.jfif" alt="photo">
+
+            </div>
+            <div class="div-2">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Esse dolorum id nam fuga deleniti laborum
+                    ea<br>
+                    doloremque dolores consectetur amet ipsam aut,<br> reiciendis, expedita quaerat impedit est
+                    veritatis illo
+                    praesentium?</p>
+            </div>
+        </div>
+
+
+        <div>
+            <p class="paragraph">RECENT POST
+            <p>
+                <hr>
+            <div class="div-1">
+                <div class="div-text">
+                    <h1>A recent post</h1>
+                    <p>By <span class="span1">Rocky Balboa</span> under <span class="button3">JavaScript</span> </p>
+                </div>
+                <img src="image2.jfif" alt="photo">
+
+            </div>
+            <div class="div-2">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Esse dolorum id nam fuga deleniti laborum
+                    ea<br>
+                    doloremque dolores consectetur amet ipsam aut,<br> reiciendis, expedita quaerat impedit est
+                    veritatis illo
+                    praesentium?</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
