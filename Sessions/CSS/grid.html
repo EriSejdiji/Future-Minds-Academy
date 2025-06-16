@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(213, 215, 218);
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    header {
+        background-color: black;
+        color: white;
+        display: flex;
+         justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header h1 {
+        margin-bottom: 15px;
+    }
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+    header nav li {
+        list-style: none;
+    
+    }
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .grid-content {
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 150px 150px 150px;
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+    
+    .grid-box {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .grid-box h1 {
+        font-size: 1rem;
+    }
+    .teksti {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .teksti h1 {
+        margin-bottom: 0;
+    }
+    footer {
+        display: flex;
+        background-color: gray;
+        height: 120px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+
+
+</style>
+
+<body>
+    <header>
+        <h1>Portoflio i Filanit</h1>
+        <nav>
+            <li class="lista1">Web Developer</li>
+            <span>•</span>
+            <li>Freelancer</li>
+        </nav>
+    </header>
+     <main>
+            <div class="teksti">
+            <h1>Rreth meje</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aut distinctio hic accusamus?<br>Nesciunt
+                sed tenetur sunt distinctio. </p>
+                </div>
+                <div>
+                    <div class="grid-content">
+                    <div class="grid-box">
+                        <h1>Projekti 1</h1>
+                        <p>Faqe per nje agjensi udhetimi.</p>
+                    </div>
+
+                    <div class="grid-box">
+                        <h1>Projekti 1</h1>
+                        <p>Faqe per nje agjensi udhetimi.</p>
+                    </div>
+
+                    <div class="grid-box">
+                        <h1>Projekti 1</h1>
+                        <p>Faqe per nje agjensi udhetimi.</p>
+                    </div>
+
+                    <div class="grid-box">
+                        <h1>Projekti 1</h1>
+                        <p>Faqe per nje agjensi udhetimi.</p>
+                    </div>
+
+                    <div class="grid-box">
+                        <h1>Projekti 1</h1>
+                        <p>Faqe per nje agjensi udhetimi.</p>
+                    </div>
+                    <div class="grid-box">
+                        <h1>Projekti 1</h1>
+                        <p>Faqe per nje agjensi udhetimi.</p>
+                    </div>
+
+                    <div class="grid-box">
+                        <h1>Projekti 1</h1>
+                        <p>Faqe per nje agjensi udhetimi.</p>
+                    </div>
+
+                    <div class="grid-box">
+                        <h1>Projekti 1</h1>
+                        <p>Faqe per nje agjensi udhetimi.</p>
+                    </div>
+
+                    <div class="grid-box">
+                        <h1>Projekti 1</h1>
+                        <p>Faqe per nje agjensi udhetimi.</p>
+                    </div>
+                    </div>
+
+
+                </div>
+        </main>
+        <footer> 
+            <p>&copy; Copyright reserved Eri Sejdiji</p>
+        </footer>
+
+</body>
+
+</html>
