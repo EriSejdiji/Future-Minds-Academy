@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .div1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 400px;
+            height: 500px;
+            background-color: rgb(172, 172, 172);
+            border: 1px solid rgb(47, 47, 255);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .input-flex {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            align-items: center;
+        }
+
+        .input1 {
+            width: 250px;
+            height: 25px;
+        }
+
+        input:focus {
+            outline: 1px solid blue;
+        }
+
+        p {
+            width: 250px;
+            height: auto;
+            font-size: 12px;
+            color: red;
+            opacity: 0;
+            margin: 0;
+            
+        }
+
+        .submit-photo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #submit {
+            background-color: blue;
+            color: white;
+            border: none;
+            height: 50px;
+            width: 100px;
+            cursor: pointer;
+        }
+
+        img {
+            width: 50px;
+            height: auto;
+            animation-name: animation-rotate-image;
+            animation-duration: 0.8s;
+            animation-iteration-count: infinite;
+        }
+
+        input:focus+p {
+            opacity: 1;
+            animation-name: tekst-rotate;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes animation-rotate-image {
+            0% {}
+
+            100% {
+                transform: rotate(720deg);
+            }
+        }
+        @keyframes tekst-rotate {
+            from {
+                transform: scaley(0);
+                opacity: 0.7;
+            }
+            to {
+                transform: scaley(14px);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="div1">
+        <div class="input-flex">
+            <input class="input1" type="text" id="first-name" placeholder="Name" name="first_name" required>
+            <p>*Enter a valid name</p>
+
+            <input class="input1" type="text" id="last-name" placeholder="Last Name" name="last_name" required>
+            <p>*Enter a valid last name</p>
+
+            <input class="input1" type="email" id="email" placeholder="Email" name="email" required>
+            <p>*Enter a valid email</p>
+        </div>
+
+        <div class="submit-photo">
+            <input type="submit" value="Submit" id="submit">
+            <img src="loadingphoto-removebg-preview.png" alt="Loading">
+        </div>
+    </div>
+
+</body>
+
+</html>
